@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Docker</title>
+    <meta property="og:title" content="Docker" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://fchouteau.github.io/isae-practical-gcp/featured-slide.jpg" />
+    <meta property="og:url" content="https://fchouteau.github.io/isae-practical-gcp" />
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/solarized-light.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section ><section data-markdown><script type="text/template">
+
+# Part 2: Docker
+### Using Docker as a Data Scientist
+
+**ISAE-SUPAERO, SDD, 26th November 2019**
+
+Florient CHOUTEAU, Dennis WILSON
+
+</script></section><section data-markdown><script type="text/template">
+
+### Outline
+
+**Presentation** (<1h)
+- Docker
+- Using docker w/ GCP
+- 
+
+**QCM** (15 minutes)
+
+**TP** (2h)
+- Self-paced workshop
+
+</script></section><section data-markdown><script type="text/template">
+
+### This class will be successful if...
+
+- You understand the basics of docker (containers, images) <!-- .element: class="fragment" data-fragment-index="1" -->
+- You understand the basics of a container registry <!-- .element: class="fragment" data-fragment-index="1" -->
+- You know how to pull an image and run a container <!-- .element: class="fragment" data-fragment-index="2" -->
+- You know what a Dockerfile looks like <!-- .element: class="fragment" data-fragment-index="3" -->
+
+</script></section><section data-markdown><script type="text/template">
+
+### Bonus !
+
+- You will discover using docker & gcp
+- You will package your first production ready Deep Learning model  <!-- .element: class="fragment" data-fragment-index="1" -->
+- You will deploy it on Google Cloud Run and we will try to scale it   <!-- .element: class="fragment" data-fragment-index="2" -->
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## Docker
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Docker w/ GCP
+
+</script></section><section ><section data-markdown><script type="text/template">
+
+## Self-paced Workshop
+
+</script></section><section data-markdown><script type="text/template">
+
+### play-with-docker
+
+</script></section></section><section  data-markdown><script type="text/template">
+
+## QCM
+
+</script></section><section  data-markdown><script type="text/template">
+
+Break (then workshop)
+</script></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"fade","transitionSpeed":"default","controls":false}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

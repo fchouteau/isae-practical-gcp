@@ -20,6 +20,10 @@ Florient CHOUTEAU, Dennis WILSON
 
 <!--v-->
 
+If you want to follow the slides go here: 
+
+<!--v-->
+
 ### Who
 
 - Computer Vision R&D at Airbus Defence and Space
@@ -27,9 +31,12 @@ Florient CHOUTEAU, Dennis WILSON
 - Ground segment software for earth observation satellites
 - Working daily with Google Cloud Platform & Docker
     - Scale processing in the cloud
-    - Package & ship algorithms w/ Docker
+    - Package & deploy algorithms w/ Docker
     - Use a lot of tools in every day life
     
+**BTW.... We have internships !** <!-- .element: class="fragment" data-fragment-index="1" -->
+
+
 <!--v--> 
 
 ### Acknoledgements
@@ -37,17 +44,6 @@ Florient CHOUTEAU, Dennis WILSON
 This course is based on Guillaume Dupin's course of 2018
 
 https://github.com/yogeek/enseignement
-
-<!--v-->
-<!-- .slide: data-background="#ff0000" -->
-
-### Objectives of this class
-
-> Introduction to global concepts of Cloud Computing, Virtualisation etc. from a **user** point of view
-
-eg.
-
-> Intro to tools you may need in six months during your PFE / 1st Job
 
 <!--v-->
 <!-- .slide: data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
@@ -61,9 +57,19 @@ This is awesome ! Stop using powerpoint !
 
 <!--v-->
 
-## Fragmented Slide
+### Objectives of this class
 
-<!-- .slide: data-background="#ff0000" -->
+Introduction to global concepts of Cloud Computing, Virtualisation etc. from a **user** point of view
 
-- Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
-- Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+eg.
+
+Intro to tools you may need in six months during your PFE / 1st Job
+
+<!--v-->
+
+### This class will be successful if...
+
+- You understand the basics of docker (containers, images) <!-- .element: class="fragment" data-fragment-index="1" -->
+- You know how to pull an image and run a container <!-- .element: class="fragment" data-fragment-index="2" -->
+- You know what a Dockerfile looks like <!-- .element: class="fragment" data-fragment-index="3" -->
+" data-fragment-index="1" -->

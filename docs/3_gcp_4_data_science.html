@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>GCP 4 Data Science</title>
+    <meta property="og:title" content="GCP 4 Data Science" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://fchouteau.github.io/isae-practical-gcp/featured-slide.jpg" />
+    <meta property="og:url" content="https://fchouteau.github.io/isae-practical-gcp" />
+    <link rel="stylesheet" href="./css/reveal.css" />
+    <link rel="stylesheet" href="./css/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/solarized-light.css" />
+    <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section ><section data-markdown><script type="text/template">
+
+# (3/3) Google Cloud Platform for Data Scientists
+### Intro to useful managed services
+
+**ISAE-SUPAERO, SDD, 27th November 2019**
+
+Florient CHOUTEAU, Dennis WILSON
+
+</script></section><section data-markdown><script type="text/template">
+
+### Objectives of this class
+
+...
+
+</script></section><section data-markdown><script type="text/template">
+
+### Outline
+
+**Presentation ( < 1h)**
+
+- How we use GCP at work (quick demo)
+- Overview of useful GCP services 
+- Intro to Jupyter AI Notebook
+- Jupyter Notebook remote execution
+- Intro to Google Colaboratory
+
+**Quizz**
+
+</script></section><section data-markdown><script type="text/template">
+
+### Outline
+
+**TP (remaining time)**
+
+Essentials...
+
+- My first production model in cloud run ! (continued.)
+- Starting a Jupyter AI Notebook and connecting to it (w/o ssh)
+
+Bonus... 
+
+- Scheduling a notebook on a Deep Learning VM (intro to scheduled computing)
+- Using Colaboratory
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## Google Cloud Platform 4 Data Science
+
+</script></section><section data-markdown><script type="text/template">
+
+Day to day usage
+
+- Data Stored in GCS
+- Remote development on a GCE
+- Distributed Training / HP Tuning using clusters
+- Infrastructure as Code to instantiate clusters
+- Deployment using docker containers
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## Jupyter AI Notebook
+
+</script></section><section data-markdown><script type="text/template">
+
+Intro
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## Google Collaboratory
+https://colab.research.google.com
+
+<img src="static/colab.png" alt="" style="background:none; border:none; box-shadow:none;"/>
+
+</script></section><section data-markdown><script type="text/template">
+
+<img src="static/open_in_colab.png" alt="" style="background:none; border:none; box-shadow:none;"/>
+
+### WTF is... Google Colab ?
+
+- Jupyter Notebook + Google Drive
+
+- Full python data science environment
+
+- 12h max session lifetime
+
+</script></section><section data-markdown><script type="text/template">
+
+### Is it for YOU ? 
+
+**Yes !**
+
+Reproducible jupyter <!-- .element: class="fragment" data-fragment-index="1" -->
+
+Shareable jupyters that runs <!-- .element: class="fragment" data-fragment-index="2" -->
+
+</script></section><section data-markdown><script type="text/template">
+
+### Nice features
+
+- You just need a google account
+
+- Can use your data: gdrive, gsheet, local filesystem
+
+- Jupyter-based: All the power of interactive & visualisations
+
+- You can `apt-get` and `pip install` what you need
+
+</script></section><section data-markdown><script type="text/template">
+
+### Nicer features
+
+- GPU (P100 !) ! (Nvidia Tesla T4, 16 GB GPU RAM = 3000$)
+
+- Collaboration ! (share and co-edit notebooks)
+
+- Open notebook from github to colab ! 
+
+</script></section><section data-markdown><script type="text/template">
+
+Demo !
+
+</script></section><section data-markdown><script type="text/template">
+
+### Limitations
+
+- Long calculations w/ guarantees (you can checkpoint your models on colab though)
+
+- Code syncing / huge codebase & huge datasets
+
+- Full control over installation and data
+
+</script></section></section><section ><section data-markdown><script type="text/template">
+
+## Quizz
+
+</script></section><section data-markdown><script type="text/template">
+
+https://kahoot.it/
+
+GAME PIN: 
+
+</script></section><section data-markdown><script type="text/template">
+
+![](https://media.giphy.com/media/FqfZhLdbTtGThAymdh/giphy.gif)
+
+</script></section><section data-markdown><script type="text/template">
+
+### Workshop ! 
+
+[Go Here](4-gcp-for-data-science/README.md)</script></section></section></div>
+    </div>
+
+    <script src="./js/reveal.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // Optional libraries used to extend on reveal.js
+      var deps = [
+        { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+        { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: './plugin/zoom-js/zoom.js', async: true },
+        { src: './plugin/notes/notes.js', async: true },
+        { src: './plugin/math/math.js', async: true }
+      ];
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        dependencies: deps
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal.getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"fade","transitionSpeed":"default","controls":false}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
