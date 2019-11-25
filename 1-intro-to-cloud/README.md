@@ -6,6 +6,12 @@
 
 ## 3. SSH, tunnelling, forwarding, tmux
 
+### ssh
+https://gravitational.com/blog/ssh-handshake-explained/
+
+### tmux 
+https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
+
 ## 4. Google Cloud Storage
 
 ## 5. Intro to Infrastructure as code

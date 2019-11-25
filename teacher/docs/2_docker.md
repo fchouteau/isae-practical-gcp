@@ -1,7 +1,7 @@
 ---
 title: Docker
 theme: solarized
-highlightTheme: solarized-dark
+highlightTheme: solarized-light
 separator: <!--s-->
 verticalSeparator: <!--v-->
 revealOptions:
@@ -55,31 +55,31 @@ Florient CHOUTEAU, Dennis WILSON
 
 ### IT Multimodality
 
-![](https://crunchytechbytz.files.wordpress.com/2018/01/whatisthechallenge.jpg)
+![](https://pointful.github.io/docker-intro/docker-img/the-challenge.png)
 
 <!--v-->
 
 ### The Matrix From Hell
-![](https://crunchytechbytz.files.wordpress.com/2018/01/matrixfromhell.jpg)
 
+![](https://pointful.github.io/docker-intro/docker-img/the-matrix-from-hell.png)
 
 <!--v-->
 
 ### Analogy...
 
-![](https://image.slidesharecdn.com/why-docker-website-130719212914-phpapp01-140801194952-phpapp02/95/docker-containers-and-the-future-of-application-delivery-10-638.jpg?cb=1407096615)
+![](https://pointful.github.io/docker-intro/docker-img/cargo-transport-pre-1960.png)
 
 <!--v-->
 
 ### Solution ?
 
-![](https://image.slidesharecdn.com/why-docker2bisv4-130725202710-phpapp01/95/why-docker-oscon-2013-13-638.jpg?cb=1374843244)
+![](https://pointful.github.io/docker-intro/docker-img/intermodal-shipping-container.png)
 
 <!--v-->
 
 ### Solution !
 
-![](https://miro.medium.com/max/3204/1*t92pgN6LdnX5nfr6NfZgcA.png)
+![](https://pointful.github.io/docker-intro/docker-img/shipping-container-for-code.png)
 
 <!--v-->
 
@@ -101,8 +101,11 @@ Docker is a solution that **standardizes** packaging and execution of software i
 
 <!--v-->
 
-![](https://image.slidesharecdn.com/docker101november2016-161205192653/95/docker-101-nov-2016-13-638.jpg)
+![](https://pointful.github.io/docker-intro/docker-img/separation-of-concerns.png)
 
+<!--v-->
+
+![](https://image.slidesharecdn.com/docker101november2016-161205192653/95/docker-101-nov-2016-13-638.jpg)
 <!--s-->
 
 ## For Data Science ?
@@ -172,6 +175,11 @@ https://www.kubeflow.org/
 - **Image**: Read-Only layer "snapshot" of an environment. Can inherit from another **Image**
 - **Container**: Read-Write instance of an **Image**
 - **DockerFile**: Description of the process used to build an Image
+- **Hub**: Repository of Docker Images
+
+<!--v-->
+
+![](https://pointful.github.io/docker-intro/docker-img/basics-of-docker-system.png)
 
 <!--v--> 
 
@@ -338,7 +346,7 @@ services:
 
 ### GCP & Docker
 
-- Everything is container-based (virtualisation...)
+- Everything is container-based (virtualization...)
 - You can even deploy "virtual machines" with containers directly
 
 ... Where's the boundary ?
