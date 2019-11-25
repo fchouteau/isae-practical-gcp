@@ -120,7 +120,7 @@ Docker is a solution that **standardizes** packaging and execution of software i
 
 ### Complex Workflow
 
-![](https://miro.medium.com/max/1566/1*_EDimQP_2_sen1v3Xf3fpw.jpeg)
+![](https://miro.medium.com/max/1566/1*_EDimQP_2_sen1v3Xf3fpw.jpeg) <!-- .element: height="60%" width="60%" -->
 
 <!--v-->
 
@@ -144,7 +144,7 @@ Docker is a solution that **standardizes** packaging and execution of software i
 
 [Netflix and notebook scheduling](https://medium.com/netflix-techblog/scheduling-notebooks-348e6c14cfd6)
 
-<img src="https://miro.medium.com/max/1229/0*byeqo-pBXVPU6xjq" alt="" style="width: 50%; height: 50%; background:none; border:none; box-shadow:none;"/>
+<img src="https://miro.medium.com/max/1229/0*byeqo-pBXVPU6xjq" alt="" style="width: 60%; height: 60%; background:none; border:none; box-shadow:none;"/>
 
 <!--v-->
 

@@ -10,9 +10,9 @@ revealOptions:
     controls: false
 ---
 
-# Cloud computing and virtualization
+# Intro to Virtualization, Cloud Computing, Docker and Google Cloud Platform
 
-### Application to Data Science & Machine Learning
+### By a Data Scientist, for Data Scientists
 
 **ISAE-SUPAERO, SDD, November 2019**
 
@@ -22,7 +22,7 @@ Florient CHOUTEAU, Dennis WILSON
 
 If you want the slides go here https://fchouteau.github.io/isae-practical-gcp/
 
-The repo is here: https://github.com/fchouteau/isae-practical-gcp/settings
+The repo is here: https://github.com/fchouteau/isae-practical-gcp/
 
 <!--v-->
 
@@ -83,4 +83,3 @@ eg.
 <!--v-->
 
 We have 10 hours
-
