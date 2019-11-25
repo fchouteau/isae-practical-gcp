@@ -18,6 +18,15 @@ revealOptions:
 
 <!--v-->
 
+### When will we be applying it ? 
+
+- This afternoon: You can do the DL class in a AI notebook
+- Next week: BE Deep Learning & Satellite Imagery
+- During the spark class...
+- During the hackathon in 2020
+
+<!--v-->
+
 Feedback welcome ! 
 
 ![](https://media.giphy.com/media/aMzFQ7nULrguA/giphy.gif)

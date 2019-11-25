@@ -54,11 +54,19 @@ gcloud docker -- pull eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0 .
 
 https://cloud.google.com/run/docs/deploying
 
-2. Where was the service deployed to ?
+Parameters:
+- Select fully managed
+- Select zone = europe-west1
+- RAM = 512 Gb
+- Allow Unauthenticated requests
+
+2. Where was the service deployed to ? 
 
 3. Query the /api/v1/health endpoint of your service
 
 4. Send a request to your service
+
+5. Send several requests to your service to check if it autoscales
 
 
 ## Troubleshooting
