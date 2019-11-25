@@ -4,6 +4,16 @@ It is **highly** suggested to open Google Cloud Shell
 
 https://ssh.cloud.google.com/cloudshell/
 
+## 0 - Introduction to REST APIs and Services
+
+Read this:
+
+Intro to web app: http://www.beginwithjava.com/servlet-jsp/web-application-overview/web-application.html
+
+Rest api: https://en.wikipedia.org/wiki/Representational_state_transfer
+
+Source of this tp: https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html
+
 ## 1 - Exploring the docker and building it locally
 
 1. What does this application seem to be doing ?
@@ -67,10 +77,3 @@ Parameters:
 4. Send a request to your service
 
 5. Send several requests to your service to check if it autoscales
-
-
-## Troubleshooting
-
-**API ?**
-
-Enable it
