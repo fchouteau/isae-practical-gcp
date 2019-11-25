@@ -30,9 +30,10 @@ Florient CHOUTEAU, Dennis WILSON
 
 <!--v-->
 
-### This class will be successful if...
+### This class and its workshop will be successful if...
 
-- ... <!-- .element: class="fragment" data-fragment-index="1" -->
-- ... <!-- .element: class="fragment" data-fragment-index="2" -->
-- ... <!-- .element: class="fragment" data-fragment-index="3" -->
-- ... <!-- .element: class="fragment" data-fragment-index="4" -->
+- You have a rough idea of what is "cloud computing" <!-- .element: class="fragment" data-fragment-index="1" -->
+- You have a rough idea of what is "google cloud platform" <!-- .element: class="fragment" data-fragment-index="1" -->
+- You know how to create a instance and connect to it via SSH <!-- .element: class="fragment" data-fragment-index="2" -->
+- You have interacted with google cloud storage <!-- .element: class="fragment" data-fragment-index="3" -->
+- You know that IAC means Infrastructure as Code <!-- .element: class="fragment" data-fragment-index="4" -->

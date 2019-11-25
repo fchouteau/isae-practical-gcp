@@ -59,17 +59,26 @@ This is awesome ! Stop using powerpoint !
 
 ### Objectives of this class
 
-Introduction to global concepts of Cloud Computing, Virtualisation etc. from a **user** point of view
+> Introduction to global concepts of Cloud Computing, Virtualisation etc. from a **user** point of view
 
 eg.
 
-Intro to tools you may need in six months during your PFE / 1st Job
+- Intro to tools you will need in later workshops (Deep Learning, Hackathon)
+- Intro to tools you may need during your internships and early career
+- General knowledge about everything cloud computing
 
 <!--v-->
 
 ### This class will be successful if...
 
-- You understand the basics of docker (containers, images) <!-- .element: class="fragment" data-fragment-index="1" -->
-- You know how to pull an image and run a container <!-- .element: class="fragment" data-fragment-index="2" -->
-- You know what a Dockerfile looks like <!-- .element: class="fragment" data-fragment-index="3" -->
-" data-fragment-index="1" -->
+- You understand why the cloud is useful for you <!-- .element: class="fragment" data-fragment-index="1" -->
+- You have a rough idea of what Google Cloud Platform can offer you <!-- .element: class="fragment" data-fragment-index="2" -->
+- You can connect to and manipulate remote machines <!-- .element: class="fragment" data-fragment-index="3" -->
+- You know the basics of docker <!-- .element: class="fragment" data-fragment-index="4" -->
+" data-fragment-index="5" -->
+- You can use some managed gcp services for Machine Learning <!-- .element: class="fragment" data-fragment-index="6" -->
+" data-fragment-index="7" -->
+
+<!--v-->
+
+We have 10 hours
