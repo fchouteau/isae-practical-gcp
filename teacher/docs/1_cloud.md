@@ -19,3 +19,20 @@ Florient CHOUTEAU, Dennis WILSON
 
 <!--v-->
 
+### Outline
+
+- **Presentation** (1h)
+    - Intro to virtualisation
+    - The Cloud
+    - Google Cloud Platform
+- **QCM** (15 minutes)
+- **self-paced Workshop** (3h)
+
+<!--v-->
+
+### This class will be successful if...
+
+- ... <!-- .element: class="fragment" data-fragment-index="1" -->
+- ... <!-- .element: class="fragment" data-fragment-index="2" -->
+- ... <!-- .element: class="fragment" data-fragment-index="3" -->
+- ... <!-- .element: class="fragment" data-fragment-index="4" -->
