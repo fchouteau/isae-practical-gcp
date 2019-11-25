@@ -4,8 +4,8 @@
 
 ## 2. My First Google Compute Engine Instance
 
-## 3. SSH, tmux etc...
+## 3. SSH, tunnelling, forwarding, tmux
 
 ## 4. Google Cloud Storage
 
-## 5. 
+## 5. Intro to Infrastructure as code
