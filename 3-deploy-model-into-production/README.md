@@ -19,7 +19,7 @@ For an introduction to RESTs APIS etc, I suggest that you read this:
 
 0. first step, in cloud shell, clone the repo
 
-`git clone git@github.com:fchouteau/isae-practical-gcp.git`
+`git clone https://github.com/fchouteau/isae-practical-gcp`
 
 Then
 
