@@ -27,13 +27,21 @@ Then
 
 1. Look at `app.py` and the `Dockerfile` What does this application seem to be doing ?
 
-2. Build the docker image locally
+2. Build the docker image using google cloud build
 
 ```bash
-docker build -t imagenet-predictor:1.0 -f Dockerfile .
+gcloud config set project (your-project-id)
+PROJECT_ID=$(gcloud config get-value project 2> /dev/null)
+gcloud builds submit --tag eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0 .
 ```
 
-3. Run a container while forwarding port. Use `-d` option if you want to do it on background
+3. Pull it
+```bash
+gcloud auth configure-docker
+docker pull eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0 .
+```
+
+4. Run a container while forwarding port. Use `--detach` option if you want to do it on background
 
 ```bash
 docker run --rm -p 8080:8080 imagenet-predictor:1.0
@@ -49,31 +57,18 @@ curl -X GET http://localhost:8080/api/v1/health
 # Get description of service
 curl -X GET http://localhost:8080/api/v1/describe
 ```
+
 5. Launch prediction
 
 ```bash
 curl -X POST -F "file=@cat.jpg" http://localhost:8080/api/v1/predict
 ```
 
-If you want you can try to download another image from the web (`wget url` and send it as well)
+6. Launch another prediction
 
-## 2 - Building the image and pushing into Cloud Registry
+Try to download another image from the web (`wget url` and send it as well)
 
-We will be using cloud build to build our images
-
-1. Build the image using gcloud build
-```
-PROJECT_ID=$(gcloud config get-value project 2> /dev/null)
-gcloud builds submit --tag eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0 .
-```
-
-2. Pull the image and verify it works (see above)
-
-```bash
-gcloud docker -- pull eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0 .
-```
-
-## 3 - Deployment using Google cloud Run
+## 2 - Deployment using Google cloud Run
 
 This is an intro to "Kubernetes" from  a user point of view
 We are going to use a managed service called "Google cloud run"

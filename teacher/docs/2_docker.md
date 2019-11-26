@@ -323,6 +323,10 @@ services:
 
 ![](https://mapr.com/products/kubernetes/assets/containers-in-pods.png)
 
+<--v-->
+
+[Kubernetes comic !](https://cloud.google.com/kubernetes-engine/kubernetes-comic/)
+
 <!--v-->
 
 ... and so many more !
@@ -445,3 +449,28 @@ docker run my-image
     -t, --tty          Allocate a pseudo-TTY
     -v, --volume=[]    Bind mount a volume
     -w, --workdir      Working directory inside the container
+
+<!--s-->
+
+## Docker Key Points
+
+<!--v-->
+
+### What we have learned
+
+- Containerisation is the step beyond virtualization
+- Containers are used to package software in a standardized way
+- Docker Images share underlying OS & can share dependencies
+- Images are Classes, Containers are Objects
+- Docker hubs enable collaboration
+
+<!--v-->
+
+## What we haven't touched
+
+- Containers really shine when you are deploying multi-containers applications
+    - [This tutorial on microservices](https://training.play-with-docker.com/microservice-orchestration/)
+- Containers really shine when you are in a cluster world
+    - [Docker swarm](https://training.play-with-docker.com/swarm-stack-intro/)
+- Orchestration & Scheduling
+    - [Read this excellent Kubernetes comic !](https://cloud.google.com/kubernetes-engine/kubernetes-comic/)
