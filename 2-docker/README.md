@@ -3,7 +3,9 @@
 ## 1. My first docker training using Play with Docker
 
 - You need an account on docker hub to access play with docker: https://hub.docker.com/
+
 OR
+
 - You can do everything from google cloud shell (it has docker preinstalled)
 
 - If you are not sure about images, containers etc, do this:
@@ -14,9 +16,12 @@ https://training.play-with-docker.com/beginner-linux/
 
 ## 2. Hello World Dockerfile
 
+You can use play with docker https://labs.play-with-docker.com or google cloud shell (both have file editors)
+
 Source: https://github.com/docker-for-data-science/docker-for-data-science-tutorial/tree/master/exercises
 
-You can use https://labs.play-with-docker.com or google cloud shell (both have file editors)
+Cloud Shell is easier to use and will be used later
+
 This set of exercises will help you get familiar with Dockerfiles.
 
 > A [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) is a file that contains commands that are used to build a Docker image. We can write a `Dockerfile` to create custom images that contain only the things we want.
@@ -79,8 +84,19 @@ Successfully tagged hello-world:latest
 
 ***Tip:** `-i` attaches STDIN and `-a` attaches STDOUT/STDERR to terminal*
 
+## 3.  Data Science Standardized Environment
 
-## 3.  Data Science Standardized Environmenr
+- You can do this either from cloud shell 
+
+OR
+ 
+- play with docker https://labs.play-with-docker.com
+
+I suggest to do it in Cloud Shell
+
+NOTE: If you have a problem with your gcp project in cloud shell `gcloud config set projet`
+
+### Intro
 
 Those of us who work on a team know how hard it is to create a standardize development environment. Or if you have ever updated a dependency and had everything break, you understand the importance of keeping development environments isolated.
 
@@ -195,15 +211,17 @@ CMD ["jupyter", "notebook", "--ip='*'", "--port=8888", "--no-browser", "--allow-
 
 3. Confirm we can access the Jupyter process by going to the endpoint URL in the container output. You should see the files of the directory you mounted in the previous step in Jupyter.
 
-4. `Ctrl+c` to stop the process
+- Note to do that from CLOUD SHELL you can use WEB PREVIEW to port 8888
+
+5. `Ctrl+c` to stop the process
 
 ## 4. Using Google Cloud Tools for Docker
 
-- Using cloud shell you should be able to do the Hello World Dockerfile exercise except that instead of using docker build you use GOogle Cloud Build https://cloud.google.com/cloud-build/docs/quickstart-docker
+- Using cloud shell you should be able to do the Hello World Dockerfile exercise except that instead of using docker build you use GOogle Cloud Build
 
-`gcloud builds submit --tag eu.gcr.io/$PROJECT_ID/{image}:{tag} .`
-
-to get your project id: `PROJECT_ID=$(gcloud config get-value project 2> /dev/null)`
+Tutorial: https://cloud.google.com/cloud-build/docs/quickstart-docker 
+Example command :`gcloud builds submit --tag eu.gcr.io/$PROJECT_ID/{image}:{tag} .`
+Helping: to get your project id: `PROJECT_ID=$(gcloud config get-value project 2> /dev/null)`
 
 ## 5. Deploying models into production
 
