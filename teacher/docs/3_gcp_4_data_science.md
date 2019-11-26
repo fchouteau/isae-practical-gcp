@@ -18,11 +18,12 @@ Florient CHOUTEAU, Dennis WILSON
 
 <!--v-->
 
-### Objectives of this class
+### During this class we will...
 
-- Useful tools to run jupyter notebooks in GCP
-- No SSH ! (hidden)
-- No Docker ! (hidden)
+- ...Discover useful managed services for data science  <!-- .element: class="fragment" data-fragment-index="1" -->
+- ...Run some jupyter notebooks in the cloud  <!-- .element: class="fragment" data-fragment-index="2" -->
+- ...Without SSH ! (hidden)  <!-- .element: class="fragment" data-fragment-index="3" -->
+- ...Without Docker ! (hidden)  <!-- .element: class="fragment" data-fragment-index="4" -->
 
 <!--v-->
 
@@ -34,6 +35,10 @@ Florient CHOUTEAU, Dennis WILSON
 - Intro to Jupyter AI Notebook
 - Jupyter Notebook remote execution
 - Intro to Google Colaboratory
+
+<!--v-->
+
+### Outline
 
 **TP (remaining time)**
 
@@ -131,13 +136,21 @@ Advanced Usage (not covered here)
 
 <!--v-->
 
-### Main Feature
+### Main Features of AI Notebooks
 
 - Preconfigured, Preinstalled data science instances
 - GPU Option
 - **Jupyterlab accessible without ssh !** 
 
 ... We will use them extensively later ;) <!-- .element: class="fragment" data-fragment-index="2" -->
+
+<!--v-->
+
+### What is the difference with DLVMs ?
+
+- Same underlying technology
+- Not same creation method => AI Notebook expose jupyter lab through https
+- Otherwise it's the same !
 
 <!--v-->
 

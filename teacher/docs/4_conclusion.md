@@ -16,6 +16,11 @@ revealOptions:
 
 ### What have we learned ?
 
+- ...Virtualisation, Cloud Computing
+- ...Google Cloud Platform, VM, SSH
+- ...Docker
+- ...Useful ML services on the GCP
+
 <!--v-->
 
 ### When will we be applying it ? 
@@ -30,8 +35,8 @@ revealOptions:
 ### BEFORE LEAVING
 
 - DELETE INSTANCES (except the AI Notebook you will use this afternoon)
-- DELETE STORAGE
-- DELETE DOCKER IMAGES FROM REGISTRY 
+- DELETE OBJECTS ON GOOGLE STORAGE
+- DELETE DOCKER IMAGES FROM REGISTRY : https://cloud.google.com/container-registry/docs/managing#deleting_images
 
 <!--v-->
 
