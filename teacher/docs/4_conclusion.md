@@ -27,6 +27,14 @@ revealOptions:
 
 <!--v-->
 
+### BEFORE LEAVING
+
+- DELETE INSTANCES (except the AI Notebook you will use this afternoon)
+- DELETE STORAGE
+- DELETE DOCKER IMAGES FROM REGISTRY 
+
+<!--v-->
+
 Feedback welcome ! 
 
 ![](https://media.giphy.com/media/aMzFQ7nULrguA/giphy.gif)

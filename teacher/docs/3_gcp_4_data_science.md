@@ -11,7 +11,6 @@ revealOptions:
 ---
 
 # Part 3: Google Cloud Platform for Data Scientists
-### Intro to useful managed services
 
 **ISAE-SUPAERO, SDD, 27th November 2019**
 
@@ -21,7 +20,9 @@ Florient CHOUTEAU, Dennis WILSON
 
 ### Objectives of this class
 
-...
+- Useful tools to run jupyter notebooks in GCP
+- No SSH ! (hidden)
+- No Docker ! (hidden)
 
 <!--v-->
 
@@ -29,29 +30,17 @@ Florient CHOUTEAU, Dennis WILSON
 
 **Presentation ( < 1h)**
 
-- How we use GCP at work (quick demo)
 - Overview of useful GCP services 
 - Intro to Jupyter AI Notebook
 - Jupyter Notebook remote execution
 - Intro to Google Colaboratory
 
-**Quizz**
-
-<!--v-->
-
-### Outline
-
 **TP (remaining time)**
 
-Essentials...
-
-- My first production model in cloud run ! (continued.)
+- My first production model deployed in Google Cloud Run ! (continued.)
 - Starting a Jupyter AI Notebook and connecting to it (w/o ssh)
-
-Bonus... 
-
-- Scheduling a notebook on a Deep Learning VM (intro to scheduled computing)
-- Using Colaboratory
+- Bonus: Using Colaboratory
+- Bonus: Scheduling a notebook on a Deep Learning VM (intro to scheduled computing)
 
 <!--s-->
 
@@ -76,12 +65,12 @@ Bonus...
 
 <!--v-->
 
-### Most useful products
+### Most useful "IaaS/PaaS" products
 
-- [Cloud Storage](https://cloud.google.com/storage/docs/): Object storage and serving
-- Compute Engine
-- Container Registry
-- Kubernetes Engine
+- Cloud Storage: Out-of-disk storage
+- Compute Engine: Virtual Machines
+- Container Registry: Sharing Docker images with your teams
+- Kubernetes Engine: Managed Kubernetes if you are doing clusters
 
 <!--v-->
 
@@ -116,9 +105,29 @@ Let's talk about one or two...
 
 <!--v-->
 
+## Features
+
 - Google Compute Engine
 - Preconfigured for ML / DL
 - With Jupyterlab pre-launched
+
+<!--v-->
+
+2 different workflows
+
+- Jupyter only ("AI Notebook")
+
+- Pre-configured instance for Data Science ("Deep Learning VM")
+
+<!--v-->
+
+Advanced Usage (not covered here)
+
+- Extensive tutorial
+- Use "preemptible" (spot in AWS terminology)*
+- CLI creation for more customization
+
+*5x less expensive, run only 24h
 
 <!--v-->
 
@@ -130,16 +139,13 @@ Let's talk about one or two...
 
 ... We will use them extensively later ;) <!-- .element: class="fragment" data-fragment-index="2" -->
 
+<!--v-->
 
-<!--s-->
-
-## Deep Learning VM & Notebook scheduling
-
-![](https://kstatic.googleusercontent.com/files/54d34d2113f78c8ce1cabdec5ca5060e5d38a5ea68d1e47cb66aeb48c3b1b8efd3a9a91dd5bfdc4aca4d372dd9d94718e209adce9147981799275d38b669e37b)
+### Demo of AI Notebook
 
 <!--v-->
 
-Intro
+### Demo of DLVM & Notebook Scheduling
 
 <!--s-->
 
@@ -155,13 +161,15 @@ https://colab.research.google.com
 
 <!--v-->
 
-### WTF is... Google Colab ?
+### What is Google Colab ?
+
+- The "free version" of Jupyter AI Notebook
 
 - Jupyter Notebook + Google Drive
 
 - Full python data science environment
 
-- 12h max session lifetime
+- 24h max session lifetime
 
 <!--v-->
 
@@ -211,13 +219,7 @@ Demo !
 
 <!--s-->
 
-## QCM & Workshop
-
-<!--v-->
-
-https://kahoot.it/
-
-GAME PIN: 
+## Self-Paced Workshop
 
 <!--v-->
 
