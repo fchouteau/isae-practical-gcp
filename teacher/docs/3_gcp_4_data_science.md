@@ -84,6 +84,7 @@ Florient CHOUTEAU, Dennis WILSON
 - All the storage / databases solutions + [BigQuery](https://cloud.google.com/bigquery/docs/)
 - [Datalab](https://cloud.google.com/datalab/docs/): Managed Jupyter notebook
 - [Dataproc](https://cloud.google.com/dataproc/docs/): Managed Spark Cluster 
+- [AutoML](https://cloud.google.com/automl/): Managed Neural Architecture Search
 
 (...and so many more)
 
@@ -93,7 +94,7 @@ Florient CHOUTEAU, Dennis WILSON
 
 https://aihub.cloud.google.com/
 
-- [Deep Learning VM](https://cloud.google.com/deep-learning-vm/docs/)**: Preconfigured Compute Engine for Deep Learning
+- [Deep Learning VM](https://cloud.google.com/deep-learning-vm/docs/): Preconfigured Compute Engine for Deep Learning
 - [AI Platform Notebook](https://cloud.google.com/ml-engine/docs/notebooks/): Managed JupyterLab notebook instances
 
 (...and so many more)
@@ -154,11 +155,15 @@ Advanced Usage (not covered here)
 
 <!--v-->
 
-### Demo of AI Notebook
+### Demo of AI Notebook (Jupyterlab)
+
+- Use a Jupyter AI Notebook Instance as a Dev Environment
 
 <!--v-->
 
-### Demo of DLVM & Notebook Scheduling
+### Demo of Notebook Scheduling
+
+- Create a Jupyter AI Notebook Instance to run a local notebook then close it
 
 <!--s-->
 

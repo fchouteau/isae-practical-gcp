@@ -75,11 +75,15 @@ https://github.com/erachelson/MLclass/tree/master/7%20-%20Deep%20Learning
 
 Don't run it just yet ;) wait for this afternoon !
 
-## 5. Schedule the execution and retrieve a notebook
+## 5. Schedule the execution of a local notebook remotely and retrieve a notebook
+
+Clone this repo again ;) https://github.com/fchouteau/isae-practical-gcp
+
+You should use cloud shell or your local terminal if you have gcloud installed
 
 Documentation: https://blog.kovalevskyi.com/gcp-notebook-executor-v0-1-2-8e37abd6fae1
 
-Underlying technology: https://github.com/nteract/papermill
+Underlying technology to schedule notebooks: https://github.com/nteract/papermill
 
 Underlying VMs: https://cloud.google.com/ai-platform/deep-learning-vm/docs/
 
@@ -92,8 +96,9 @@ Just to clarify:
     you can precycle specify how much resources you need
 
  
-Edit the following instructions to match with something you want !
-You can link to another one of your jupyter notebook if you want
+- Create a bucket and remember its name
+- Edit the following instructions to match with something you want to execute
+- You can link to another one of your (local) jupyter notebook if you want
 
 ```bash
 source utils.sh
