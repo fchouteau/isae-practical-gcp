@@ -9,7 +9,6 @@ It is necessary to have done 1. and 2. before leaving !
 [Finish Last Part](../3-deploy-model-into-production)
 
 ## 2. Creating a Jupyter AI Notebook Instance from the GUI
-
 **Configuration**
 
 Documentation: https://cloud.google.com/ai-platform/notebooks/docs/
@@ -34,12 +33,13 @@ Basically a more advanced version of Jupyter that includes some IDE functionalit
 
 - Using the terminal available in jupyter lab you can download a notebook (wget) from the cloud
   
-
 For example you can upload the notebook called `ai-notebook-demo-pytorch.ipynb` to your instance (use `wget URL-OF-THE-NOTEBOOK` from the terminal)
 
 - You can also upload one of your own notebook + data using google cloud storage then downloading it (`gsutil cp {storage} {local}`)
 
 **Warning: Don't use the colab notebook outside of collab it's not going to work !**
+
+**If you are using the provided ai notebook example, change the output storage to one you own**
 
 ## 3. Discover Google Colaboratory
 
@@ -64,6 +64,8 @@ For example you can upload the notebook called `ai-notebook-demo-pytorch.ipynb` 
 - What are the differences between this and the AI Notebook ?
 
 You're done !
+
+**If you are using the provided ai notebook example, change the output storage to one you own**
 
 ## 4. Preparation for the Deep Learning Class this afternoon
 
@@ -137,6 +139,6 @@ execute_notebook -i "${INPUT_NOTEBOOK}" \
 
 You have limited quota, which restricts you from using certain resources. You should ask for more GPU
 
-https://stackoverflow.com/questions/45227064/how-to-request-gpu-quota-increase-in-google-cloud
+- Change **GPU ALL REGIONS** quota using this solution https://stackoverflow.com/questions/45227064/how-to-request-gpu-quota-increase-in-google-cloud
 
 
