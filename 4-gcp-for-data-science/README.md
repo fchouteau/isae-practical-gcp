@@ -92,15 +92,17 @@ Just to clarify:
     you can precycle specify how much resources you need
 
  
+Edit the following instructions to match with something you want !
+You can link to another one of your jupyter notebook if you want
 
 ```bash
 source utils.sh
 
-INPUT_NOTEBOOK="/home/fchouteau/classes/isae-practical-gcp/4-gcp-for-data-science/ai-notebook-demo-pytorch.ipynb"
+INPUT_NOTEBOOK="/home/fchouteau/classes/isae-practical-gcp/4-gcp-for-data-science/scheduling-notebook.ipynb"
 # Should be existing bucket
 GCP_BUCKET="gs://fchouteau-storage/test-execution"
-IMAGE_FAMILY_NAME="pytorch-latest-gpu"
-INSTANCE_TYPE="n1-standard-8"
+IMAGE_FAMILY_NAME="pytorch-latest-cpu"
+INSTANCE_TYPE="n1-standard-4"
 GPU_TYPE="p100"
 GPU_COUNT=1
 ZONE="europe-west1-b"
@@ -109,8 +111,7 @@ execute_notebook -i "${INPUT_NOTEBOOK}" \
                  -o "${GCP_BUCKET}" \
                  -f "${IMAGE_FAMILY_NAME}" \
                  -t "${INSTANCE_TYPE}" \
-                 -z "${ZONE}" \
-                 -g "${GPU_TYPE}"
+                 -z "${ZONE}"
 ```
 
 - Check the Google Compute Engine UI to see what is happening
@@ -120,8 +121,10 @@ execute_notebook -i "${INPUT_NOTEBOOK}" \
         notebook get’s uploaded to the Google Cloud Storage
         new Deep Learning VM created with the special argument that pointing to the notebook on Google Cloud Storage
         background Deep Learning VM executes the notebook
-        background Deep Learning VM uploads resulted Noteook to the GCS
-        background Deep Learning VM self terminates
+        background Deep Learning VM uploads resulted Notebook to the GCS
+        background Deep Learning VM self terminate
+
+- Check google cloud storage to see if execution was correctly handled
 
 ## Troubleshooting
 
