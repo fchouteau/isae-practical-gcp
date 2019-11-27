@@ -228,6 +228,42 @@ Shareable jupyters that runs <!-- .element: class="fragment" data-fragment-index
 
 <!--v-->
 
+### Colab is free... the other is paid... why not only use colab ?
+
+
+ <table style="width:100%">
+  <tr>
+    <th>Google Colab</th>
+    <th>Google AI Notebook</th>
+  </tr>
+  <tr>
+    <td>Learn, experiment </td>
+    <td>Can scale compute</td>
+  </tr>
+  <tr>
+    <td>Single notebook / Clone from github</td>
+    <td>Upload own code</td>
+  </tr>
+  <tr>
+    <td>Simple jupyter env.</td>
+    <td>Full jupyter lab or SSH access</td>
+  </tr>
+  <tr>
+    <td>Data from anywhere / google drive</td>
+    <td>Fully owned cloud environment</td>
+  </tr>
+  <tr>
+    <td>Short runtimes</td>
+    <td>Cheap 1d runtimes or arbitrary runtimes</td>
+  </tr>
+  <tr>
+    <td>**free**</td>
+    <td>**[paid](https://cloud.google.com/compute/pricing)** (by minute of computing + storage)</td>
+  </tr>
+</table> 
+
+<!--v-->
+
 Demo !
 
 <!--s-->
