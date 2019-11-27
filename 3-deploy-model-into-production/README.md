@@ -38,13 +38,14 @@ gcloud builds submit --tag eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0 .
 3. Pull it
 ```bash
 gcloud auth configure-docker
-docker pull eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0 .
+docker pull eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0
 ```
 
-4. Run a container while forwarding port. Use `--detach` option if you want to do it on background
+4. Run a container while forwarding port. Use `--detach` option if you want to do it on background (to run curl commands)
+ (or you can use tmux ;) ) 
 
 ```bash
-docker run --rm -p 8080:8080 imagenet-predictor:1.0
+docker run --rm -p 8080:8080 eu.gcr.io/$PROJECT_ID/imagenet-predictor:1.0
 ```
 
 4. Check health 
