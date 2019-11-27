@@ -33,7 +33,8 @@ Basically a more advanced version of Jupyter that includes some IDE functionalit
 - You can open and run one of the many tutorials in /tutorial/ section
 
 - Using the terminal available in jupyter lab you can download a notebook (wget) from the cloud
-    
+  
+
 For example you can upload the notebook called `ai-notebook-demo-pytorch.ipynb` to your instance (use `wget URL-OF-THE-NOTEBOOK` from the terminal)
 
 - You can also upload one of your own notebook + data using google cloud storage then downloading it (`gsutil cp {storage} {local}`)
@@ -89,14 +90,15 @@ Just to clarify:
     you will not need to convert your notebook to python code (you can submit it as is)
     you will not have to monitor execution to make sure you deallocating resources immediately after execution is done, this is taken care for you
     you can precycle specify how much resources you need
-    
+
  
+
 ```bash
 source utils.sh
 
 INPUT_NOTEBOOK="/home/fchouteau/classes/isae-practical-gcp/4-gcp-for-data-science/ai-notebook-demo-pytorch.ipynb"
 # Should be existing bucket
-GCP_BUCKET="gs://fchouteau-storage/test-execution/"
+GCP_BUCKET="gs://fchouteau-storage/test-execution"
 IMAGE_FAMILY_NAME="pytorch-latest-gpu"
 INSTANCE_TYPE="n1-standard-8"
 GPU_TYPE="p100"
