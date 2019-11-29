@@ -47,7 +47,7 @@ Florient CHOUTEAU, Dennis WILSON
 
 <!--s-->
 
-## Why Docker ?
+## The need for Containers in software
 
 ![](https://miro.medium.com/max/400/1*qY9Mmc2k_agwALr2UGY-8g.png)
 
@@ -108,7 +108,7 @@ Docker is a solution that **standardizes** packaging and execution of software i
 ![](https://image.slidesharecdn.com/docker101november2016-161205192653/95/docker-101-nov-2016-13-638.jpg)
 <!--s-->
 
-## For Data Science ?
+## Containers for Data Science ?
 
 <!--v-->
 
@@ -157,19 +157,43 @@ https://www.kubeflow.org/
 
 <!--v-->
 
+### Drawbacks of VMs
+
+- VM Contains full OS at each install => Install + Resource overhead
+- VM needs pre-allocation of resource for each VM (=> Waste if not used)
+- Communication between VM <=> Communication between computers
+
+<!--v-->
+
 ### Container vs Virtual Machine
 
 ![](https://www.docker.com/sites/default/files/d8/2018-11/docker-containerized-and-vm-transparent-bg.png)
 
 <!--v-->
 
-### Container vs Virtual Machine
+### Container vs Virtual Machine, an Analogy
 
 ![](http://www.lukewilson.net/images/2017/02/apartment-house.png)
 
 <!--v-->
 
-### Vocabulary
+### Resources allocation in containers
+
+- Due to sharing underlying OS, the container manager can allocate resources (CPU, Storage, RAM) on the fly (!= VM)
+- GPU is way easier to manage / share with containers
+
+![](static/img/container.jpg)
+
+<!--v-->
+
+### Some drawbacks of containers
+
+- Most containers solution are based on Linux (Docker makes Windows container possible though)
+- Isolation is not perfect since containers share underlying kernels (security and stability)
+
+<!--v-->
+
+### Vocabulary of Docker
 
 - **Layer**: Set of read-only files to provision the system
 - **Image**: Read-Only layer "snapshot" of an environment. Can inherit from another **Image**
@@ -262,7 +286,6 @@ docker run my-image
 ### In practice
 
 <img src="static/img/docker_pratique.png" alt="" style="width: 50%; height: 50%; background:none; border:none; box-shadow:none;"/>
-
 
 <!--s-->
 
@@ -461,8 +484,9 @@ docker run my-image
 - Containerisation is the step beyond virtualization
 - Containers are used to package software in a standardized way
 - Docker Images share underlying OS & can share dependencies
-- Images are Classes, Containers are Objects
-- Docker hubs enable collaboration
+- Unlike VM, you don't pre-allocate resources with containers (due to kernel sharing)
+- Images are 'Classes', Containers are 'Objects'
+- Docker Hubs enable collaboration
 
 <!--v-->
 

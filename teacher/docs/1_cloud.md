@@ -68,6 +68,7 @@ Wikipedia
 ### Evolution of Virtualization
 
 ![](https://miro.medium.com/max/10698/1*wE7TrQmFyRTDwh6VpbkbMQ.png)
+
 <!--v-->
 
 ![](https://yogeek.github.io/enseignement/Introduction_Virtualisation_CloudComputing/img/but_why.gif)
