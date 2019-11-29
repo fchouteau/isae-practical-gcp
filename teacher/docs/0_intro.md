@@ -35,9 +35,6 @@ The repo is here: https://github.com/fchouteau/isae-practical-gcp/
     - Scale processing in the cloud
     - Package & deploy algorithms w/ Docker
     - Use a lot of tools in every day life
-    
-**BTW.... We have internships !** <!-- .element: class="fragment" data-fragment-index="1" -->
-
 
 <!--v--> 
 
