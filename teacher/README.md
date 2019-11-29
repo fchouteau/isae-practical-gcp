@@ -1,3 +1,13 @@
+## Teacher's resources
+
+Slides in `docs/`, built with reveal-md. Use scripts to build them
+
+Requirements:
+
+- `npm install -g reveal-md`
+
+## Notes
+
 Cours (1h): 
 Intro Virtualisation, Cloud Computing
 
