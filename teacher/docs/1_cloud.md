@@ -158,9 +158,15 @@ Let's sell it !
 
 <!--v-->
 
-In 2018
+In 2018,
 
 ![](https://www.fourquadrant.com/wp-content/uploads/2018/10/Screenshot-2018-10-14-08.37.18.png)
+
+<!--v-->
+
+In 2019, 
+
+![](https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Screen-Shot-2020-02-05-at-9.38.35-AM.png)
 
 <!--v-->
 
@@ -253,7 +259,7 @@ resources:
 
 ### IaaS, PaaS, SaaS
 
-![](https://miro.medium.com/max/1313/1*0z9Pqwn7ujypQ396wleJ1Q.png)
+![](https://blogs.bmc.com/wp-content/uploads/2017/09/saas-vs-paas-vs-iaas.png)
 
 <!--v-->
 

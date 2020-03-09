@@ -85,7 +85,9 @@ Florient CHOUTEAU, Dennis WILSON
 
 ![](https://www.docker.com/sites/default/files/social/docker_facebook_share.png)
 
-Docker is a solution that **standardizes** packaging and execution of software in isolated environments (**containers**) that can communicate
+Docker is **a** solution that **standardizes** packaging and execution of software in isolated
+ environments
+ (**containers**) that can communicate
 
 > Build, Share, and Run Any App, Anywhere
 
@@ -94,6 +96,12 @@ Docker is a solution that **standardizes** packaging and execution of software i
 - Created in 2013
 - Open Source
 - Not a new idea but set a new standard
+
+<!--v-->
+
+Docker is not the only solution for containers...
+
+https://chimeracoder.github.io/docker-without-docker/#30
 
 <!--v-->
 
@@ -134,8 +142,9 @@ Docker is a solution that **standardizes** packaging and execution of software i
 
 ### So... containers ?
 
-- ... for deploying your models
+- ... for deployment
 - ... for standardized development environments
+- ... dependency management
 - ... for complex / large scale workflows
 
 **it works on my notebook !**
@@ -154,6 +163,10 @@ https://www.kubeflow.org/
 <!--s-->
 
 ## Docker "in-depth"
+
+<!--v-->
+
+https://medium.com/swlh/what-exactly-is-docker-1dd62e1fde38
 
 <!--v-->
 
